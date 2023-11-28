@@ -1,0 +1,47 @@
+<form class="row g-3 needs-validation" method="POST" action="/addnewstudent" novalidate>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInputFirstName" value="{{this.id}}"
+                placeholder="First Name" name="id" required>
+            <label for="floatingInputFirstName">Id</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInputFirstName" value="{{this.first_name}}"
+                placeholder="First Name" name="first_name" required>
+            <label for="floatingInputFirstName">First Name</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInputLastName" value="{{this.last_name}}"
+                placeholder="Last Name" name="last_name" required>
+            <label for="floatingInputLastName">Last Name</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInputEmail" value="{{this.email}}"
+                placeholder="email@email.com" name="email" required>
+            <label for="floatingInputEmail">Email</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInputPhone" value="{{this.phone}}" placeholder="Phone"
+                name="phone" required>
+            <label for="floatingInputPhone">Phone</label>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="comments" name="comments"
+                style="height: 200px">{{this.comments}}</textarea>
+            <label for="comments">Comments</label>
+        </div>
+    </div>
+    <div class="col-12 d-grid">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+<form class="row g-3 needs-validation" method="POST" action="/addnewprogram" novalidate>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInputProgramId" value="{{this.program_id}}"
+                placeholder="Program Id" name="program_id" required>
+            <label for="floatingInputFirstName">Id</label>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInputProgramtName" value="{{this.program_name}}"
+                placeholder="program Name" name="program_name" required>
+            <label for="floatingInputProgramName">Program Name</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Description" id="description" name="description"
+                style="height: 200px">{{this.description}}</textarea>
+            <label for="comments">Description</label>
+        </div>
+    </div>
+    <div class="col-12 d-grid">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
